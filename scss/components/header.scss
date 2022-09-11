@@ -1,0 +1,55 @@
+@import url(../style.scss);
+.menu{
+    
+    color:  white;
+    height: 75px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+}
+.logo{
+    a{
+        display: flex;
+        text-decoration: none;
+        color: white;
+        font-size: 35px;
+        font-weight: bold;
+        align-items: center;
+        margin-left: 20px;
+    }
+    img{
+        width: 75px;
+        height: 75px;
+    }  
+}
+
+.menu-items{
+    display: flex;
+    list-style: none;
+    margin-right: 35px;
+    
+    li a{
+        padding: 7px 13px;
+        text-decoration: none;
+        font-size: 18px;
+        color: white;
+        font-size: 20px;
+        transition: all 0.2s ease;
+        &:hover{
+            padding: 5px 10px;
+            background: white;
+            color: black;
+            border-radius: 15px;
+            }
+        }
+}
+.menu.active{
+    background-color: #00bcd4;
+}
+
+.scrol{
+    height: 100%;
+}
+

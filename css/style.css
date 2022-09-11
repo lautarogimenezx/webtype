@@ -1,43 +1,12 @@
-body {
-  font-family: 'Source Sans Pro', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: white; }
-
-.hero {
-  color: white;
-  height: 100vh;
-  width: 100%;
-  background-image: url(../img/banner.jpg);
-  background-position: center;
-  background-size: cover; }
-  .hero .engranaje {
-    margin-left: 20vw;
-    margin-top: 30vh;
-    width: 80px;
-    height: 80px; }
-  .hero .titulo {
-    max-width: 600px;
-    font-size: 55px;
-    font-weight: 400;
-    margin-left: 20vw;
-    margin-top: 0;
-    margin-bottom: 0; }
-  .hero .subtitulo {
-    max-width: 600px;
-    margin-left: 20vw;
-    margin-top: 0;
-    font-size: 52px;
-    font-weight: 300; }
-
+@import url(../style.scss);
 .menu {
-  background-color: #00bcd4;
   color: white;
   height: 75px;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  position: fixed; }
 
 .logo a {
   display: flex;
@@ -55,13 +24,57 @@ body {
 .menu-items {
   display: flex;
   list-style: none;
-  margin-right: 30px; }
+  margin-right: 35px; }
+  .menu-items li a {
+    padding: 7px 13px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    font-size: 20px;
+    transition: all 0.2s ease; }
+    .menu-items li a:hover {
+      padding: 5px 10px;
+      background: white;
+      color: black;
+      border-radius: 15px; }
 
-.menu-items li a {
-  padding: 7px 13px;
-  text-decoration: none;
-  font-size: 18px;
-  color: white; }
+.menu.active {
+  background-color: #00bcd4; }
+
+.scrol {
+  height: 100%; }
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white; }
+
+.hero {
+  color: white;
+  height: 100vh;
+  width: 100%;
+  background-image: url(../img/banner.jpg);
+  background-position: center;
+  background-size: cover; }
+  .hero .engranaje {
+    margin-left: 20vw;
+    margin-top: 25vh;
+    width: 80px;
+    height: 80px; }
+  .hero .titulo {
+    max-width: 600px;
+    font-size: 55px;
+    font-weight: 400;
+    margin-left: 20vw;
+    margin-top: 0;
+    margin-bottom: 0; }
+  .hero .subtitulo {
+    max-width: 600px;
+    margin-left: 20vw;
+    margin-top: 0;
+    font-size: 52px;
+    font-weight: 300; }
 
 .boton1 {
   width: 225px;
@@ -75,15 +88,21 @@ body {
   font-size: 12px;
   padding: 0 10px;
   align-items: center;
-  border: 3px solid white; }
-
-.boton1 img {
-  width: 40px;
-  height: 40px; }
-
-.boton1 a {
-  text-decoration: none;
-  color: white; }
+  border: 3px solid white;
+  transition: 1s; }
+  .boton1 img {
+    width: 40px;
+    height: 40px; }
+  .boton1 a {
+    text-decoration: none;
+    color: white;
+    transition: 1s; }
+    .boton1 a:hover {
+      color: #00bcd4; }
+  .boton1:hover {
+    transform: scale(1.03);
+    border-color: #00bcd4;
+    color: #00bcd4; }
 
 .boton2 {
   width: 225px;
@@ -97,16 +116,141 @@ body {
   font-size: 12px;
   padding: 0 10px;
   align-items: center;
-  border: 3px solid white; }
-
-.boton2 img {
-  width: 40px;
-  height: 30px; }
-
-.boton2 a {
-  text-decoration: none;
-  color: white; }
+  border: 3px solid white;
+  transition: 1s; }
+  .boton2 img {
+    width: 40px;
+    height: 30px; }
+  .boton2 a {
+    text-decoration: none;
+    color: white;
+    transition: 1s; }
+    .boton2 a:hover {
+      color: #00bcd4; }
+  .boton2:hover {
+    transform: scale(1.03);
+    border-color: #00bcd4;
+    color: #00bcd4; }
 
 .botones-contacto {
   display: flex;
   margin-left: 20vw; }
+
+/*Tecnologias*/
+.tecnologias {
+  width: 100%;
+  background-color: #FFFF;
+  text-align: center;
+  margin-top: 5vh;
+  margin-bottom: 5vh; }
+  .tecnologias h2 {
+    font-size: 40px;
+    font-weight: 400; }
+  .tecnologias .logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; }
+    .tecnologias .logos img {
+      width: 85px;
+      height: 85px;
+      margin: 30px;
+      transition: 0.5s; }
+      .tecnologias .logos img:hover {
+        transform: scale(1.2); }
+    .tecnologias .logos .php {
+      width: 122px;
+      height: 85px; }
+
+/*Presupuestos*/
+.presupuestos {
+  height: 35vh;
+  width: 100%;
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .presupuestos .texto-presupuestos {
+    font-size: 40px;
+    font-weight: 400;
+    margin-left: 5vw; }
+    .presupuestos .texto-presupuestos p {
+      margin-top: 0;
+      margin-bottom: 0; }
+
+.boton-contacto {
+  width: 140px;
+  height: 50px;
+  background-color: #00bcd4;
+  margin-right: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s; }
+  .boton-contacto a {
+    color: #ffff;
+    list-style: none;
+    text-decoration: none;
+    font-size: 20px; }
+  .boton-contacto:hover {
+    background-color: dimgrey; }
+
+/*Quines somos*/
+.quienes-somos {
+  margin: 5vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  .quienes-somos .texto-quienesomos {
+    margin-right: 11vw; }
+    .quienes-somos .texto-quienesomos h2 {
+      font-size: 40px;
+      font-weight: 400; }
+    .quienes-somos .texto-quienesomos p {
+      font-size: 20px;
+      color: gray; }
+
+/*Mision y vision*/
+.mision-vision {
+  margin: 5vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  .mision-vision .texto-mision {
+    margin-left: 8vw; }
+    .mision-vision .texto-mision h2 {
+      font-size: 40px;
+      font-weight: 400; }
+    .mision-vision .texto-mision p {
+      font-size: 20px;
+      color: gray; }
+
+/*Servicios*/
+.servicios {
+  width: 100%;
+  background-color: #f8f9fa; }
+  .servicios div h2 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 400; }
+  .servicios div .tarjetas {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+    .servicios div .tarjetas div {
+      width: 300px;
+      background-color: #ffff;
+      padding: 20px;
+      font-size: 20px;
+      border-radius: 10px;
+      transition: 0.5s; }
+      .servicios div .tarjetas div img {
+        width: 70px;
+        height: 70px; }
+      .servicios div .tarjetas div p {
+        color: gray; }
+      .servicios div .tarjetas div h3 {
+        font-size: 25px;
+        font-weight: 400; }
+      .servicios div .tarjetas div:hover {
+        transform: scale(1.05); }
