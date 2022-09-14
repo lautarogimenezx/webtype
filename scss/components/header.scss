@@ -7,7 +7,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
 }
 .logo{
     a{
@@ -38,18 +37,9 @@
         font-size: 20px;
         transition: all 0.2s ease;
         &:hover{
-            padding: 5px 10px;
-            background: white;
-            color: black;
-            border-radius: 15px;
+            font-size: 22px;
+            text-decoration:underline;
             }
         }
-}
-.menu.active{
-    background-color: #00bcd4;
-}
-
-.scrol{
-    height: 100%;
 }
 

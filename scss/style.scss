@@ -43,11 +43,10 @@ body{
     height: 48px;
     background-color: #4b9f2a;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     text-decoration: none;
     color: white;
-    font-size: 12px;
     padding: 0 10px;
     align-items: center;
     border: 3px solid white;
@@ -55,6 +54,10 @@ body{
     img{
         width: 40px;
         height: 40px;
+    }
+    h2{
+        padding-top: 5px;
+        font-size: 18px;
     }
     a{
         text-decoration: none;
@@ -80,13 +83,16 @@ body{
     justify-content: center;
     text-decoration: none;
     color: white;
-    font-size: 12px;
     padding: 0 10px;
     align-items: center;
     border: 3px solid white;
     img{
         width: 40px;
         height: 30px;
+    }
+    h2{
+        padding-top: 5px;
+        font-size: 18px;
     }
     a{
         text-decoration: none;
@@ -235,10 +241,12 @@ body{
     width: 100%;
     background-color: #f8f9fa;
     div{
+        margin: 2vw;
         h2{
             text-align: center;
             font-size: 50px;
             font-weight: 400;
+            margin-block: 0;
         }
         .tarjetas {
             display: flex;
@@ -272,4 +280,211 @@ body{
         }
     }
     
+}
+
+/*Portafolio*/
+.portafolio{
+    width: 100%;
+
+    h2{
+        text-align: center;
+        font-size: 50px;
+        font-weight: 400;
+        margin-block: 0;
+    }
+    div{
+        margin: 2vw;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        a{
+            max-width: 420px;
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            color: #7d7d7d;
+            font-size: 20px;
+            font-weight: 400;
+            img{
+                width: 420px;
+                height: 250px;
+            }
+            transition: 0.5s;
+            &:hover{
+                transform: scale(1.05);
+            }
+        }
+    }
+}
+
+/*precios*/
+.precios{
+    width: 100%;
+    background-color: #f8f9fa;
+    h2{
+        text-align: center;
+        font-size: 50px;
+        font-weight: 400;
+    }
+
+    .tarjetas{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+
+        div{
+            margin: 5vh;
+            width: 250px;
+            background-color: #ffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: 0.5s;
+            &:hover{
+                transform: scale(1.05);
+            }
+            ul{
+                list-style: none;
+                margin-left:15px ;
+                padding: 0;
+                margin-block: 0.5em;
+                text-align: start;
+                
+            }
+            h2{
+                font-size: 35px;
+                font-weight: 400;
+                color: black;
+                margin-block: 0.5em;
+                text-align: center;
+            }
+            h3{
+                color: #4D4D4D;
+                font-size: 30px;
+                font-weight: 400;
+                margin-block: 0.5em;
+                text-align: center;
+                
+            }
+            p{
+                font-size: 20px;
+                font-weight: 400;
+                color: #7d7d7d;
+                margin-block: 0.5em;
+            }
+            a{
+                width: 100px;
+                height: 30px;
+                background-color: #00bcd4;
+                color: #ffff;
+                text-decoration: none;
+                margin-bottom:15px ;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 20px;
+                font-weight: 400;
+                transition: 0.2s;
+                &:hover{
+                    background-color: grey;
+                }
+            }
+        
+        }
+    }
+}
+/*Contacto*/
+.contacto{
+    margin: 1vw;
+    padding: 0;
+    width: 100%;
+    background-color: #ffff;
+    display: flex;
+    flex-wrap:wrap ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    h2{
+        text-align: center;
+        font-size: 50px;
+        font-weight: 400;
+    }
+    div{
+
+        display: flex;
+        width: 70vw;
+        padding: 10px;
+    }
+    .myb{
+        flex-direction: column;
+        padding:0 ;
+        justify-content: center;
+            align-items: center;
+        .boton-enviar{
+            width: 120px;
+            height: 40px;
+        }
+    }
+}
+footer{
+    width: 100%;
+    background-color: black;
+    color: #808080;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a{
+            background-color: #212121;
+            text-decoration: none;
+            color: #808080;
+            margin: 10px ;
+            display: flex;
+            padding: 10px;
+            border-radius: 5px;
+            transition: 0.2s;
+            &:hover{
+                color: #808080;
+                transform: scale(1.1);
+            }
+
+            img{
+                width: 16px;
+                height: 16px;
+                margin: 5px;
+            }
+        }
+    }
+    .logo-footer{
+        a{
+            text-decoration: none;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            h2{
+                color: #ffff;
+                font-size: 35px;
+            }
+            img{
+                width: 60px;
+                height: 60px;
+            }
+        }
+    }
+}
+.copy{
+    width: 100%;
+    background-color: #212121;
+    color: #808080;
+    padding-top: 20px;
 }

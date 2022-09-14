@@ -5,8 +5,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  position: fixed; }
+  align-items: center; }
 
 .logo a {
   display: flex;
@@ -33,16 +32,8 @@
     font-size: 20px;
     transition: all 0.2s ease; }
     .menu-items li a:hover {
-      padding: 5px 10px;
-      background: white;
-      color: black;
-      border-radius: 15px; }
-
-.menu.active {
-  background-color: #00bcd4; }
-
-.scrol {
-  height: 100%; }
+      font-size: 22px;
+      text-decoration: underline; }
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
@@ -81,11 +72,10 @@ body {
   height: 48px;
   background-color: #4b9f2a;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   text-decoration: none;
   color: white;
-  font-size: 12px;
   padding: 0 10px;
   align-items: center;
   border: 3px solid white;
@@ -93,6 +83,9 @@ body {
   .boton1 img {
     width: 40px;
     height: 40px; }
+  .boton1 h2 {
+    padding-top: 5px;
+    font-size: 18px; }
   .boton1 a {
     text-decoration: none;
     color: white;
@@ -113,7 +106,6 @@ body {
   justify-content: center;
   text-decoration: none;
   color: white;
-  font-size: 12px;
   padding: 0 10px;
   align-items: center;
   border: 3px solid white;
@@ -121,6 +113,9 @@ body {
   .boton2 img {
     width: 40px;
     height: 30px; }
+  .boton2 h2 {
+    padding-top: 5px;
+    font-size: 18px; }
   .boton2 a {
     text-decoration: none;
     color: white;
@@ -229,28 +224,196 @@ body {
 .servicios {
   width: 100%;
   background-color: #f8f9fa; }
-  .servicios div h2 {
+  .servicios div {
+    margin: 2vw; }
+    .servicios div h2 {
+      text-align: center;
+      font-size: 50px;
+      font-weight: 400;
+      margin-block: 0; }
+    .servicios div .tarjetas {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap; }
+      .servicios div .tarjetas div {
+        width: 300px;
+        background-color: #ffff;
+        padding: 20px;
+        font-size: 20px;
+        border-radius: 10px;
+        transition: 0.5s; }
+        .servicios div .tarjetas div img {
+          width: 70px;
+          height: 70px; }
+        .servicios div .tarjetas div p {
+          color: gray; }
+        .servicios div .tarjetas div h3 {
+          font-size: 25px;
+          font-weight: 400; }
+        .servicios div .tarjetas div:hover {
+          transform: scale(1.05); }
+
+/*Portafolio*/
+.portafolio {
+  width: 100%; }
+  .portafolio h2 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 400;
+    margin-block: 0; }
+  .portafolio div {
+    margin: 2vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .portafolio div a {
+      max-width: 420px;
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      color: #7d7d7d;
+      font-size: 20px;
+      font-weight: 400;
+      transition: 0.5s; }
+      .portafolio div a img {
+        width: 420px;
+        height: 250px; }
+      .portafolio div a:hover {
+        transform: scale(1.05); }
+
+/*precios*/
+.precios {
+  width: 100%;
+  background-color: #f8f9fa; }
+  .precios h2 {
     text-align: center;
     font-size: 50px;
     font-weight: 400; }
-  .servicios div .tarjetas {
+  .precios .tarjetas {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap; }
-    .servicios div .tarjetas div {
-      width: 300px;
+    flex-direction: row;
+    justify-content: space-around; }
+    .precios .tarjetas div {
+      margin: 5vh;
+      width: 250px;
       background-color: #ffff;
-      padding: 20px;
-      font-size: 20px;
-      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       transition: 0.5s; }
-      .servicios div .tarjetas div img {
-        width: 70px;
-        height: 70px; }
-      .servicios div .tarjetas div p {
-        color: gray; }
-      .servicios div .tarjetas div h3 {
-        font-size: 25px;
-        font-weight: 400; }
-      .servicios div .tarjetas div:hover {
+      .precios .tarjetas div:hover {
         transform: scale(1.05); }
+      .precios .tarjetas div ul {
+        list-style: none;
+        margin-left: 15px;
+        padding: 0;
+        margin-block: 0.5em;
+        text-align: start; }
+      .precios .tarjetas div h2 {
+        font-size: 35px;
+        font-weight: 400;
+        color: black;
+        margin-block: 0.5em;
+        text-align: center; }
+      .precios .tarjetas div h3 {
+        color: #4D4D4D;
+        font-size: 30px;
+        font-weight: 400;
+        margin-block: 0.5em;
+        text-align: center; }
+      .precios .tarjetas div p {
+        font-size: 20px;
+        font-weight: 400;
+        color: #7d7d7d;
+        margin-block: 0.5em; }
+      .precios .tarjetas div a {
+        width: 100px;
+        height: 30px;
+        background-color: #00bcd4;
+        color: #ffff;
+        text-decoration: none;
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        font-weight: 400;
+        transition: 0.2s; }
+        .precios .tarjetas div a:hover {
+          background-color: grey; }
+
+/*Contacto*/
+.contacto {
+  margin: 1vw;
+  padding: 0;
+  width: 100%;
+  background-color: #ffff;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .contacto h2 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 400; }
+  .contacto div {
+    display: flex;
+    width: 70vw;
+    padding: 10px; }
+  .contacto .myb {
+    flex-direction: column;
+    padding: 0;
+    justify-content: center;
+    align-items: center; }
+    .contacto .myb .boton-enviar {
+      width: 120px;
+      height: 40px; }
+
+footer {
+  width: 100%;
+  background-color: black;
+  color: #808080;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  footer div {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    footer div a {
+      background-color: #212121;
+      text-decoration: none;
+      color: #808080;
+      margin: 10px;
+      display: flex;
+      padding: 10px;
+      border-radius: 5px;
+      transition: 0.2s; }
+      footer div a:hover {
+        color: #808080;
+        transform: scale(1.1); }
+      footer div a img {
+        width: 16px;
+        height: 16px;
+        margin: 5px; }
+  footer .logo-footer a {
+    text-decoration: none;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    footer .logo-footer a h2 {
+      color: #ffff;
+      font-size: 35px; }
+    footer .logo-footer a img {
+      width: 60px;
+      height: 60px; }
+
+.copy {
+  width: 100%;
+  background-color: #212121;
+  color: #808080;
+  padding-top: 20px; }
